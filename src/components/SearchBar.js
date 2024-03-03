@@ -1,17 +1,17 @@
-function SearchBar() {
+function SearchBar({ onSubmit}) {
     const handleFormSubmit = (event) => {
-        event.preventDefault();
-        console.log('I need to tell the parent about some data');
+        event.preventDefault(); // Prevent the page from refreshing when the form is submitted
+        
+        onSubmit('Cars'); // Call the function that was passed to the component as a prop
     };
 
     return (
         <div>
             <form onSubmit={handleFormSubmit}>
-                <input type="text" />
+                <input />
             </form>
         </div>
     );
 }
   
-  export default SearchBar;
-  
+export default SearchBar;
