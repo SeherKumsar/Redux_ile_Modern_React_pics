@@ -1,4 +1,5 @@
 import SearchBar from './components/SearchBar';
+import ImageList from './components/ImageList';
 import searchImages from './api';
 
 function App () {
@@ -13,6 +14,7 @@ function App () {
         <div>
             {/* <SearchBar callWhenUserPressesEnter={handleSubmit} /> */}
             <SearchBar onSubmit={handleSubmit} />
+            <ImageList />
         </div>
     );
 }
