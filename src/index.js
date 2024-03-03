@@ -1,8 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// Aternative 1
+// import { createRoot } from 'react-dom/client';
+
+// Aternative 2
+// 👇️ For client createRoot or hydrateRoot
+// import * as ReactDOMClient from 'react-dom/client';
+// 👇️ For renderToPipeableStream or renderToReadableStream
+// import * as ReactDOMServer from 'react-dom/server';
+
+import ReactDOMClient from 'react-dom/client';
 import App from './App';
 
 const el = document.getElementById('root');
-const root = ReactDOM.createRoot(el);
+const root = ReactDOMClient.createRoot(el);
+// const root = createRoot(el);
 
-root.render(<App /> );
+root.render(<App />);
