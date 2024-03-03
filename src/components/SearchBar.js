@@ -15,7 +15,7 @@ function SearchBar({ onSubmit}) {
 
     const handleChange = (event) => {
         // console.log(event.target.value); // used event.target.value instead of all event
-        setTerm(event.target.value);
+        setTerm(event.target.value.replace(/[a-z]/, ''));
     };
 
     return (
