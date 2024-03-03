@@ -9,6 +9,7 @@ function App () {
 
     return (
         <div>
+            {/* <SearchBar callWhenUserPressesEnter={handleSubmit} /> */}
             <SearchBar onSubmit={handleSubmit} />
         </div>
     );

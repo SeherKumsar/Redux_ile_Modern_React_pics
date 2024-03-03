@@ -1,8 +1,14 @@
 function SearchBar({ onSubmit }) {
-    return <div>SearchBar</div>;
-
-    <button onClick={}> asd </button>
-  }
+    const handleClick = () => {
+        onSubmit('cars');
+        }
+    return (
+        <div>
+            <input />
+            <button onClick={handleClick}>Click me</button>
+        </div>
+    );
+}
   
   export default SearchBar;
   
