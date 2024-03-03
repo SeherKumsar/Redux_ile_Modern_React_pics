@@ -8,7 +8,6 @@ function SearchBar({ onSubmit}) {
     const handleFormSubmit = (event) => {
         event.preventDefault(); // Prevent the page from refreshing when the form is submitted
         
-        // NEVER EVER EVER DO THIS
         onSubmit(
             'asdasd'
         );
@@ -22,7 +21,8 @@ function SearchBar({ onSubmit}) {
     return (
         <div>
             <form onSubmit={handleFormSubmit}>
-                <input value="hi there!!" onChange={handleChange} />
+                Confirm your search: {term}
+                <input value={term} onChange={handleChange} />
             </form>
         </div>
     );
