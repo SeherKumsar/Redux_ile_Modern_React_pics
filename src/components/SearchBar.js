@@ -14,7 +14,8 @@ function SearchBar({ onSubmit}) {
         );
     };
 
-    const handleChange = () => {
+    const handleChange = (event) => {
+        console.log(event.target.value); // used event.target.value instead of all event
     };
 
     return (
