@@ -9,7 +9,7 @@ function App () {
 
     return (
         <div>
-            <SearchBar />
+            <SearchBar onSubmit={handleSubmit} />
         </div>
     );
 }
