@@ -22,7 +22,7 @@ function SearchBar({ onSubmit}) {
     return (
         <div>
             <form onSubmit={handleFormSubmit}>
-                <input onChange={handleChange} />
+                <input value={term} onChange={handleChange} />
             </form>
         </div>
     );
