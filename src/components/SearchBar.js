@@ -14,12 +14,13 @@ function SearchBar({ onSubmit}) {
         );
     };
 
-    
+    const handleChange = () => {
+    };
 
     return (
         <div>
             <form onSubmit={handleFormSubmit}>
-                <input />
+                <input onChange={handleChange} />
             </form>
         </div>
     );
