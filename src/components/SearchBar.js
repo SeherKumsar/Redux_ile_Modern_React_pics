@@ -23,6 +23,7 @@ function SearchBar({ onSubmit}) {
             <form onSubmit={handleFormSubmit}>
                 Confirm your search: {term}
                 <input value={term} onChange={handleChange} />
+                {term.length < 3 && 'Term must be longer'}
             </form>
         </div>
     );
