@@ -1,9 +1,9 @@
 import ImageShow from "./ImageShow";
 
 function ImageList({ images }) {
-  const renderedImages = images.map((image) => {
+  const renderedImages = images.map((image, index) => {
     return (
-      <div key={image.id}>
+      <div key={index}>
         <ImageShow image={image} />
       </div>
     );
